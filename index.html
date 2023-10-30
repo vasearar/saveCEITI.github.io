@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protect CEITI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <audio id="ambientSound" loop>
+    <source src="./assets/ambient.mp3" type="audio/mpeg">
+  </audio>
+  <div class="game">
+      <div class="crosshair">
+        <div class="crosshairElement"></div>
+        <div class="crosshairElement"></div>
+      </div>
+      <div class="score">Score:🕷</div>
+      <img src="./assets/gun.png" alt="gun" class="gun">
+  </div>
+  <div class="total">
+    <div class="loading">
+      <h1 style="color: rgb(245, 239, 239); text-align: center;"><span style="color: gray;">CURRENT OBJECTIVE:<br></span>SURVIVE</h1>
+    </div>
+    <div class="begin">
+      <div class="menu">
+        <button onclick="startGame()">Play</button>
+        <button onclick="abtME()">About me</button>
+        <button onclick="settings()">Setting<span>s</span></button>
+      </div>
+      <div class="settings">
+        <label for="sound">Sound volume:</label>
+        <input id="sound" type="range" min="0" max="100" value="100">
+        <label for="joke">Quality of life in Moldova:</label>
+        <input id="joke" type="range" min="0" max="100" value="30">
+        <button class="back" onclick="back()">Back</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
