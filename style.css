@@ -84,6 +84,7 @@ p{
   width: 100px;
   transform: translate(-100px) rotate(180deg);
   z-index: 100;
+  pointer-events: none;
 }
 
 .spider{
