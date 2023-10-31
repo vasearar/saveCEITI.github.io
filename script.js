@@ -141,6 +141,7 @@ function startGame(){
     loading.style.opacity = "1";
     loading.classList.remove("appear");
     menu.style.display = "none";
+    document.querySelector(".settings").style.display = "none";
     setTimeout(() => {
       game.style.display = "block";
       loading.classList.add("disappear");
