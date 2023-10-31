@@ -165,7 +165,7 @@ function startGame(){
           shotAudio.volume = "0.1";
           shotAudio.play();
         });
-        let starting = 1000;
+        let starting = 1400;
         let size = 10;
         spawnInterval = setInterval(() => {
           spawnSpider(size);
